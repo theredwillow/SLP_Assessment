@@ -1,0 +1,13 @@
+{% if title is not defined %}
+{% set title = "SLP Narrative Tool" %}
+{% endif %}
+<html>
+<head>
+<title>{{ title }}</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+{{ body }}
+</body>
+</html>

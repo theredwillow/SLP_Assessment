@@ -1,0 +1,16 @@
+{% if element == "form" %}
+<form action="{{ action }}" enctype="multipart/form-data" method="post">
+<text class="title">{{ title }}</text><br>
+{% if description is defined %}
+<text class="content">{{ description }}</text><br>
+{% endif %}
+
+{{ body }}
+</form>
+{% endif %}
+
+
+
+{% if element == "tidbit" %}
+<span class="tidbit"><text class="title">{{ name }}</text><br><text class="contents">{{ contents }}</text></span>
+{% endif %}
