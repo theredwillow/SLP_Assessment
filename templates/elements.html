@@ -1,12 +1,14 @@
 {% if element == "form" %}
-<form action="{{ action }}" enctype="multipart/form-data" method="post">
+{% if occurance == "first" %}
+<form action="{{ action }}" enctype="multipart/form-data" method="get" name="form">
+{% endif %}
+<span>
 <text class="title">{{ title }}</text><br>
-{% if description is defined %}
+{% if description != "" %}
 <text class="content">{{ description }}</text><br>
 {% endif %}
-
 {{ body }}
-</form>
+</span>
 {% endif %}
 
 

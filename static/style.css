@@ -3,7 +3,7 @@ body {
 	width: 92%;
 }
 
-.tidbit, form {
+span {
   	background-color: black;
  	display: inline-block;
  	padding: 8px 8px 8px 8px;
